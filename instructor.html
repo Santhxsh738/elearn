@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Become Instructor | Secret Coder</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="image/icon.png" rel="icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f4f7f6; color: #333; }
+
+        /* --- GRADIENT ANIMATION --- */
+        .gradient-bg {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: white;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Navbar */
+        .navbar { background: #fff; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 15px 0; }
+        .nav-link { color: #555 !important; font-weight: 600; margin-left: 20px; transition: 0.3s; }
+        .nav-link:hover, .nav-link.active { color: #e73c7e !important; }
+        
+        .btn-gradient {
+            background: linear-gradient(90deg, #fb873f, #e73c7e);
+            color: white; border: none; padding: 12px 30px; border-radius: 50px; font-weight: 600; transition: 0.3s;
+        }
+        .btn-gradient:hover { transform: translateY(-3px); color: white; box-shadow: 0 10px 25px rgba(231, 60, 126, 0.4); }
+
+        /* Header Section */
+        .page-header { padding: 100px 0; text-align: center; }
+
+        /* Content Boxes */
+        .info-card {
+            background: #fff; border-radius: 20px; padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); height: 100%;
+            transition: 0.3s; border-bottom: 5px solid transparent;
+        }
+        .info-card:hover { transform: translateY(-10px); border-bottom: 5px solid #e73c7e; }
+
+        .icon-box {
+            width: 60px; height: 60px; border-radius: 15px;
+            background: rgba(231, 60, 126, 0.1); color: #e73c7e;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 24px; margin-bottom: 20px;
+        }
+
+        /* Modal Styling */
+        .modal-content { border-radius: 20px; border: none; overflow: hidden; }
+        .modal-header { background: linear-gradient(90deg, #fb873f, #e73c7e); color: white; border: none; }
+        .form-control { background: #f8f9fa; border: 1px solid #eee; padding: 12px; border-radius: 10px; }
+        .form-control:focus { border-color: #e73c7e; box-shadow: 0 0 0 3px rgba(231, 60, 126, 0.1); }
+
+        .img-rounded { border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a href="home.php" class="navbar-brand d-flex align-items-center">
+                <img src="image/icon.png" height="40" class="me-2">
+                <h3 class="m-0 fw-bold" style="color:#333;">Secret<span style="color:#e73c7e;">Coder</span></h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a href="home.php" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="courses.php" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid page-header gradient-bg">
+        <div class="container">
+            <h1 class="display-3 fw-bold text-white mb-4">Share Your Knowledge</h1>
+            <p class="fs-5 text-white-50 mb-5">Join the Secret Coder elite instructor community and inspire learners worldwide.</p>
+            <button class="btn btn-light text-dark py-3 px-5 rounded-pill fw-bold shadow" data-bs-toggle="modal" data-bs-target="#applyModal">Apply to Teach</button>
+        </div>
+    </div>
+
+    <div class="container py-5 mt-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 text-center">
+                <img src="image/img11.jpg" class="img-fluid img-rounded" alt="Instructor Profile Image">
+            </div>
+            <div class="col-lg-6">
+                <h6 class="text-uppercase fw-bold" style="color:#e73c7e;">Your Future Starts Here</h6>
+                <h1 class="fw-bold mb-4">Why Teach on Secret Coder?</h1>
+                <p class="text-muted mb-4">We empower instructors to reach thousands of students globally. Our platform provides you with the best-in-class tools to manage your content and doubts.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Easy Course Management</li>
+                    <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Direct Student Interaction</li>
+                    <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Flexible Content Hosting</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="info-card text-center">
+                    <div class="icon-box mx-auto"><i class="fa fa-paper-plane"></i></div>
+                    <h5 class="fw-bold">Step 1: Apply</h5>
+                    <p class="text-muted small">Submit your details through our quick application form.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="info-card text-center">
+                    <div class="icon-box mx-auto"><i class="fa fa-microphone"></i></div>
+                    <h5 class="fw-bold">Step 2: Create</h5>
+                    <p class="text-muted small">Upload your videos and share notes with the community.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="info-card text-center">
+                    <div class="icon-box mx-auto"><i class="fa fa-award"></i></div>
+                    <h5 class="fw-bold">Step 3: Earn</h5>
+                    <p class="text-muted small">Build your personal brand and help others grow.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark text-light pt-4 pb-2 mt-5">
+        <div class="container text-center">
+            <p class="mb-0 opacity-50 small">&copy; Secret Coder Instructor Portal. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <div class="modal fade" id="applyModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Instructor Registration</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form action="instructor_save.php" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">First Name</label>
+                                <input type="text" class="form-control" name="first_name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">Last Name</label>
+                                <input type="text" class="form-control" name="last_name" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label small fw-bold">Email</label>
+                                <input type="email" class="form-control" name="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label small fw-bold">Qualification</label>
+                                <input type="text" class="form-control" name="degree" required placeholder="e.g. Master in Web Dev">
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" name="apply" class="btn-gradient w-100 py-3 mt-3">SUBMIT APPLICATION</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
